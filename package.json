@@ -1,6 +1,6 @@
 {
   "name": "language-ember-htmlbars",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Ember HTMLBars language support in Atom",
   "engines": {
     "atom": "*",
