@@ -2,4 +2,8 @@
 
 Adds syntax highlighting for Ember's HTMLBars templates to Atom.
 
-Originally sourced from [`atom/language-html`](http://github.com/atom/language-html). `grammers/html-htmlbars.cson` is a HTMLBars compatible version of `atom/language-html` which is used to provide better compatibility.
+Originally sourced from [`atom/language-html`](http://github.com/atom/language-html).
+
+`grammers/html-htmlbars.cson` is a HTMLBars compatible version of `atom/language-html` which is used to provide better compatibility.
+
+![Screenshot](screenshot.png)
