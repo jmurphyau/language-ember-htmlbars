@@ -1,0 +1,18 @@
+{
+  "name": "language-ember-htmlbars",
+  "version": "0.1.0",
+  "description": "Ember HTMLBars language support in Atom",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "http://atom.github.io/language-ember-htmlbars",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmurphyau/language-ember-htmlbars.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jmurphyau/language-ember-htmlbars/issues"
+  }
+}

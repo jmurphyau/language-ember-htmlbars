@@ -1,0 +1,28 @@
+'scopeName': 'internal.text.html.htmlbars.inline'
+
+# 'fileTypes': [ 'hbs' ]
+
+# 'name': '[Internal] Ember HTMLBars - Subexpressions'
+
+'patterns': [
+
+  { 'include': '#htmlbars-inline' }
+
+]
+
+'repository':
+
+  'htmlbars-inline':
+    'name': 'meta.tag.inline.htmlbars'
+    'begin': '(\\{\\{)(?:(if|unless|yield|else if|else)|([a-zA-Z0-9.-]+))'
+    'end': '(\\}\\})'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.tag.inline.htmlbars'
+      '2':
+        'name': 'support.function.builtin.inline.htmlbars'
+      '3':
+        'name': 'entity.name.function.inline.htmlbars'
+    'patterns': [
+      { 'include': 'internal.text.html.htmlbars.curley' }
+    ]

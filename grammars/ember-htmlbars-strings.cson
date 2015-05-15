@@ -1,0 +1,41 @@
+'scopeName': 'internal.text.html.htmlbars.strings'
+
+# 'fileTypes': [ 'hbs' ]
+
+# 'name': '[Internal] Ember HTMLBars - Strings'
+
+'patterns': [
+  { 'include': '#string-single-quoted' }
+
+  { 'include': '#string-double-quoted' }
+]
+
+'repository':
+
+  'string-double-quoted':
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.html.htmlbars'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.html.htmlbars'
+    'name': 'string.quoted.double.html.htmlbars'
+    'patterns': [
+      { 'include': 'internal.text.html.htmlbars.core' }
+    ]
+
+  'string-single-quoted':
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.html.htmlbars'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.html.htmlbars'
+    'name': 'string.quoted.single.html.htmlbars'
+    'patterns': [
+      { 'include': 'internal.text.html.htmlbars.core' }
+    ]

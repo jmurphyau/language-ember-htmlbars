@@ -1,0 +1,41 @@
+'scopeName': 'internal.text.html.htmlbars.subexp'
+
+# 'fileTypes': [ 'hbs' ]
+
+# 'name': '[Internal] Ember HTMLBars - Subexpressions'
+
+'patterns': [
+
+  { 'include': '#htmlbars-subexp' }
+  { 'include': 'internal.text.html.htmlbars.strings' }
+  { 'include': '#htmlbars-generic-attribute-name' }
+  { 'include': '#htmlbars-generic-attribute-value' }
+
+]
+
+'repository':
+
+  'htmlbars-subexp':
+    'name': 'meta.tag.inline.subexp.htmlbars'
+    'begin': '(\\()([a-zA-Z0-9.-]+)'
+    'end': '(\\))'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.tag.htmlbars'
+      '2':
+        'name': 'entity.name.function.block.htmlbars'
+    'patterns': [
+      { 'include': '$self' }
+    ]
+
+  'htmlbars-generic-attribute-name':
+    'match': '(?<=[^=])\\b([a-zA-Z0-9:_.-]+)(=)'
+    'captures':
+      '1':
+        'name': 'entity.other.attribute-name.html.htmlbars'
+      '2':
+        'name': 'punctuation.definition.tag.htmlbars'
+
+  'htmlbars-generic-attribute-value':
+    'match': '\\b([a-zA-Z0-9:_.-]+)\\b'
+    'name': 'string.unquoted.htmlbars'

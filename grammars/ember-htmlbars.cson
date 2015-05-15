@@ -1,0 +1,11 @@
+'scopeName': 'text.html.htmlbars'
+
+'fileTypes': [ 'hbs' ]
+
+'name': 'Ember HTMLBars'
+
+'patterns': [
+  { 'include': 'internal.text.html.htmlbars.core' }
+  { 'include': 'internal.text.html.htmlbars' }
+
+]

@@ -1,0 +1,40 @@
+'scopeName': 'internal.text.html.htmlbars.curley'
+
+# 'fileTypes': [ 'hbs' ]
+
+# 'name': '[Internal] Ember HTMLBars - Curley'
+
+'patterns': [
+  { 'include': '#htmlbars-block-params' }
+
+  { 'include': '#htmlbars-as-keyword' }
+
+  { 'include': 'internal.text.html.htmlbars.subexp' }
+
+  { 'include': 'internal.text.html.htmlbars.strings' }
+
+]
+
+'repository':
+
+  'htmlbars-block-params':
+    'name': 'keyword.block-params.htmlbars'
+    'begin': '(?<!\\|)(\\|)'
+    'beginCaptures':
+      '1':
+        'name': 'constant.other.symbol.begin.htmlbars'
+    'end': '(\\|)(?!\\|)'
+    'endCaptures':
+      '1':
+        'name': 'constant.other.symbol.end.htmlbars'
+    'patterns': [
+      { 'include': '#htmlbars-block-param' }
+    ]
+
+  'htmlbars-block-param':
+    'name': 'variable.other.htmlbars'
+    'match': '\\b([a-zA-Z0-9-_]+)\\b'
+
+  'htmlbars-as-keyword':
+    'name': 'support.function.builtin.htmlbars'
+    'match': '\\s\\b(as)\\b(?=\\s\\|)'

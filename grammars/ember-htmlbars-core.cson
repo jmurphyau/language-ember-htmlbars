@@ -1,0 +1,55 @@
+'scopeName': 'internal.text.html.htmlbars.core'
+
+# 'fileTypes': [ 'hbs' ]
+
+# 'name': '[Internal] Ember HTMLBars - Core'
+
+'patterns': [
+
+  { 'include': '#htmlbars-comment' }
+  { 'include': '#htmlbars-block-open' }
+  { 'include': '#htmlbars-block-close' }
+  { 'include': 'internal.text.html.htmlbars.inline' }
+
+]
+
+'repository':
+
+  'htmlbars-comment':
+    'name': 'comment.block.htmlbars'
+    'begin': '\\{\\{!((?:--)*)'
+    'end': '(\\1)\\}\\}'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.htmlbars'
+
+  'htmlbars-block-open':
+    'name': 'meta.tag.block.open.htmlbars'
+    'begin': '(\\{\\{)(#)(?:(if|unless|with|each|else if|else)|([a-zA-Z0-9.-]+))'
+    'end': '(\\}\\})'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.tag.htmlbars'
+      '2':
+        'name': 'punctuation.definition.tag.htmlbars'
+      '3':
+        'name': 'support.function.builtin'
+      '4':
+        'name': 'entity.name.function.block.htmlbars'
+    'patterns': [
+      { 'include': 'internal.text.html.htmlbars.curley' }
+    ]
+
+  'htmlbars-block-close':
+    'name': 'meta.tag.block.close.htmlbars'
+    'begin': '(\\{\\{)(/)(?:(if|unless|with|each|else if|else)|([a-zA-Z0-9.-]+))'
+    'end': '(\\}\\})'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.tag.htmlbars'
+      '2':
+        'name': 'punctuation.definition.tag.htmlbars'
+      '3':
+        'name': 'support.function.builtin'
+      '4':
+        'name': 'entity.name.function.block.htmlbars'
