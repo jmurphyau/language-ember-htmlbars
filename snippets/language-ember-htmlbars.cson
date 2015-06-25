@@ -22,7 +22,7 @@
     'body': '{{link-to \' ${1:Text}\' \'${2:Route}\'}}'
   'each':
     'prefix': 'each'
-    'body': '{{#each ${1:model} key="@guid" as |${2:param}|}}\n\t$0\n{{/each}}'
+    'body': '{{#each ${1:model} as |${2:param}|}}\n\t$0\n{{/each}}'
   'input':
     'prefix': 'input'
     'body': '{{input type="${1:type}" value=${2:value} }}'
