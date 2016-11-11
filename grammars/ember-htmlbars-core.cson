@@ -25,7 +25,7 @@
 
   'htmlbars-block-open':
     'name': 'meta.tag.block.open.htmlbars'
-    'begin': '(\\{\\{)(#)(?:(if|unless|with|each|else if|else)|([a-zA-Z0-9.-]+))'
+    'begin': '(\\{\\{)(#)(?:(if|unless|with|each|else if|else)|([a-zA-Z0-9./-]+))'
     'end': '(\\}\\})'
     'captures':
       '1':
