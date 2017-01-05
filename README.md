@@ -7,3 +7,5 @@ Originally sourced from [`atom/language-html`](http://github.com/atom/language-h
 `grammers/html-htmlbars.cson` is a HTMLBars compatible version of `atom/language-html` which is used to provide better compatibility.
 
 ![Screenshot](https://raw.githubusercontent.com/jmurphyau/language-ember-htmlbars/master/screenshot.png)
+
+Snippets inspired by [`handlebars`](https://github.com/daaain/Handlebars)
