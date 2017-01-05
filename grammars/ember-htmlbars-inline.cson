@@ -14,7 +14,7 @@
 
   'htmlbars-inline':
     'name': 'meta.tag.inline.htmlbars'
-    'begin': '(\\{\\{)(?:(if|unless|yield|else if|else)|([a-zA-Z0-9.-]+))'
+    'begin': '(\\{\\{)(?:(if|unless|yield|else if|else)|([a-zA-Z0-9./_-]+))'
     'end': '(\\}\\})'
     'captures':
       '1':
